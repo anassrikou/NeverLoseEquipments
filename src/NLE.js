@@ -44,7 +44,7 @@ class NLE {
         }
 
         // Check for exit status
-        if (enableFoundInRaid)
+        if (offraidData.exit === "survived" || enableFoundInRaid)
         {
             // mark found items and replace item ID's if enabled in the config file
             offraidData.profile = InraidController.markFoundItems(pmcData, offraidData.profile, isPlayerScav);
